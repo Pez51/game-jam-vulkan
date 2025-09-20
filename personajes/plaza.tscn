@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://b78g6i46w1wbl"]
+
+[ext_resource type="Texture2D" uid="uid://b002boio8wqa3" path="res://imagenes/PARQUE.jpg" id="1_u5ivp"]
+[ext_resource type="PackedScene" uid="uid://pnpsb5dwdn87" path="res://personajes/personaje_principal.tscn" id="2_6tyir"]
+[ext_resource type="PackedScene" uid="uid://cxfj6wyvci66v" path="res://personajes/palmera.tscn" id="3_j4f0o"]
+
+[node name="Plaza" type="Node2D"]
+
+[node name="Parque" type="Sprite2D" parent="."]
+position = Vector2(441, 247)
+scale = Vector2(0.639231, 0.510893)
+texture = ExtResource("1_u5ivp")
+
+[node name="Personaje principal" parent="." instance=ExtResource("2_6tyir")]
+position = Vector2(428, 240)
+scale = Vector2(0.31, 0.31)
+
+[node name="Palmera" parent="." instance=ExtResource("3_j4f0o")]
+position = Vector2(549, 77)
+
+[node name="Palmera2" parent="." instance=ExtResource("3_j4f0o")]
+position = Vector2(365, 163)
+
+[node name="Palmera3" parent="." instance=ExtResource("3_j4f0o")]
+position = Vector2(578, 320)
+
+[node name="Palmera4" parent="." instance=ExtResource("3_j4f0o")]
+position = Vector2(800, 169)
+
+[node name="Palmera5" parent="." instance=ExtResource("3_j4f0o")]
+position = Vector2(93, 420)
+
+[node name="Palmera6" parent="." instance=ExtResource("3_j4f0o")]
+position = Vector2(792, 424)
